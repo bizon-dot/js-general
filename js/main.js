@@ -3,7 +3,7 @@
 
            // 1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
 
-            2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+           // 2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 
             3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
@@ -24,10 +24,31 @@
     
 */
 
-function maxNum(){
+function maxNum() {
     var firstNum = prompt((`Inserisci il primo numero`));
     var secondNum = prompt(`Inserisci il primo numero`);
-    console.log(`Il numero maggiore è: ` + Math.max(parseInt(firstNum),parseInt(secondNum)));
+    console.log(`Il numero maggiore è: ` + Math.max(parseInt(firstNum), parseInt(secondNum)));
+}
+
+/*  
+    ========================================================================================================
+        2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la 
+            parola più corta, poi la parola più lunga.
+    ========================================================================================================
+    
+*/
+
+function maxWord() {
+    var firstWord = prompt((`Inserisci la prima parola`));
+    var secondWord = prompt(`Inserisci la seconda parola`);
+    if (firstWord.length > secondWord.length) {
+        console.log(`La parola più lunga è la prima: ` + firstWord);
+    } else if (firstWord.length < secondWord.length) {
+        console.log(`La parola più lunga è la seconda: ` + secondtWord);
+    } else {
+        console.log(`Le due parole hanno la stessa lunghezza`);
+    }
+
 }
 
 
@@ -37,4 +58,6 @@ function maxNum(){
     ========================================================================================================
     
 */
-maxNum();
+
+//maxNum();
+maxWord();
