@@ -1,0 +1,19 @@
+/*
+        !TODO: 
+
+            1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+
+            2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+
+            3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+
+            4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while
+
+            5. Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+
+            6. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+
+            7. Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
+
+*/
+
