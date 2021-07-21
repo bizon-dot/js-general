@@ -93,6 +93,24 @@ function fiveAdditionWhile(){
 
 /*  
     ========================================================================================================
+        5. Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari 
+            inseriscilo nell’array
+    ========================================================================================================
+    
+*/
+
+function isOdd(){
+    oddnumber = [];
+    for (let index = 0; index < 6; index++) {
+        const element = array[index];
+        
+    }
+}
+
+
+
+/*  
+    ========================================================================================================
                                                         DEBUG
     ========================================================================================================
     
@@ -100,5 +118,5 @@ function fiveAdditionWhile(){
 
 //maxNum();
 //maxWord();
-// fiveAddition();
-fiveAdditionWhile();
+fiveAddition();
+//fiveAdditionWhile();
