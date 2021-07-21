@@ -9,9 +9,9 @@
 
             // 4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while
 
-            5. Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+            // 5. Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 
-            6. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+            // 6. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
 
             7. Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
@@ -100,13 +100,30 @@ function fiveAdditionWhile(){
 */
 
 function isOdd(){
-    oddnumber = [];
+    oddNumber = [];
     for (let index = 0; index < 6; index++) {
-        const element = array[index];
-        
+        var num = prompt((`Inserisci un numero, se disparo sarà inserito nell'array`));
+        if (num % 2 != 0){
+            oddNumber.push(num);
+        }
+    console.log(oddNumber);
     }
 }
 
+/*  
+    ========================================================================================================
+        5. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+    ========================================================================================================
+    
+*/
+
+function isEven(){
+    var num = prompt((`Inserisci un numero, se è pari sarà stampato nella console`));
+    if (num % 2 == 0){
+        console.log(`Il numero: ` + num + ` è pari`);
+    }
+    
+}
 
 
 /*  
@@ -118,5 +135,7 @@ function isOdd(){
 
 //maxNum();
 //maxWord();
-fiveAddition();
+//fiveAddition();
 //fiveAdditionWhile();
+//isOdd();
+isEven();
