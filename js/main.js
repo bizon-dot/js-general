@@ -1,7 +1,7 @@
 /*
         !TODO: 
 
-            1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+           // 1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
 
             2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 
@@ -17,3 +17,24 @@
 
 */
 
+/*  
+    ========================================================================================================
+        1. L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+    ========================================================================================================
+    
+*/
+
+function maxNum(){
+    var firstNum = prompt((`Inserisci il primo numero`));
+    var secondNum = prompt(`Inserisci il primo numero`);
+    console.log(`Il numero maggiore è: ` + Math.max(parseInt(firstNum),parseInt(secondNum)));
+}
+
+
+/*  
+    ========================================================================================================
+                                                        DEBUG
+    ========================================================================================================
+    
+*/
+maxNum();
