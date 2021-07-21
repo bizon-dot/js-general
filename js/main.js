@@ -5,7 +5,7 @@
 
            // 2. L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 
-            3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+           // 3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
             4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while
 
@@ -51,6 +51,24 @@ function maxWord() {
 
 }
 
+/*  
+    ========================================================================================================
+        3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa
+         la somma di tutti i numeri inseriti.
+    ========================================================================================================
+    
+*/
+
+function fiveAddition(){
+    var sum = 0;
+    for (let index = 0; index < 5; index++) {
+        var num = prompt((`Inserisci il numero da sommare`));
+        console.log(`Numeri inseriti:` + index);
+        sum = parseInt(num) + sum;
+        
+    }
+    console.log(`La somma dei cinque numeri è: ` + sum);
+}
 
 /*  
     ========================================================================================================
@@ -60,4 +78,5 @@ function maxWord() {
 */
 
 //maxNum();
-maxWord();
+//maxWord();
+fiveAddition();
