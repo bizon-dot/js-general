@@ -7,7 +7,7 @@
 
            // 3. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-            4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while
+            // 4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while
 
             5. Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 
@@ -71,6 +71,27 @@ function fiveAddition(){
 }
 
 /*  
+
+    ========================================================================================================
+        4. Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa 
+        la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con 
+        il while
+    ========================================================================================================
+    
+*/
+
+function fiveAdditionWhile(){
+    var index = 0;
+    var sum = 0;
+    do {
+        index = index + 1;
+        var num = prompt((`Inserisci il numero da sommare`));
+        console.log(`Numeri inseriti:` + (index));
+        sum = parseInt(num) + sum;
+      } while (index < 5);
+}
+
+/*  
     ========================================================================================================
                                                         DEBUG
     ========================================================================================================
@@ -79,4 +100,5 @@ function fiveAddition(){
 
 //maxNum();
 //maxWord();
-fiveAddition();
+// fiveAddition();
+fiveAdditionWhile();
