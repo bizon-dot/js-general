@@ -15,6 +15,15 @@
 
             7. Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
+            8.Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal numero passato.
+                            Esempio:
+                                Input: n = 5
+                                Output:
+                                        4
+                                        3
+                                        2
+                                        1
+                                        0
 */
 
 /*  
@@ -112,7 +121,7 @@ function isOdd(){
 
 /*  
     ========================================================================================================
-        5. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+        6. Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
     ========================================================================================================
     
 */
@@ -125,6 +134,32 @@ function isEven(){
     
 }
 
+/*  
+    ========================================================================================================
+        7. Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
+    ========================================================================================================
+    
+*/
+
+function fakeInvite(){
+    user_name = ["Linus", "Richard", "John", "Tom"];
+    user_lastName = ["Linus", "Richard", "John", "Tom"];
+}
+
+/*  
+    ========================================================================================================
+        7. Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal 
+            numero passato.
+    ========================================================================================================
+    
+*/
+
+function countdown(num){
+        while (num != 0) {
+            num--;
+            console.log(num);
+        }
+}
 
 /*  
     ========================================================================================================
@@ -138,4 +173,5 @@ function isEven(){
 //fiveAddition();
 //fiveAdditionWhile();
 //isOdd();
-isEven();
+//isEven();
+countdown(8);
