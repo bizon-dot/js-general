@@ -163,6 +163,24 @@ function countdown(num){
 
 /*  
     ========================================================================================================
+        8. Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal 
+            numero passato e stampa il risultato nel dom
+    ========================================================================================================
+    
+*/
+
+function countdownDOM(num){
+    while (num != 0) {
+        num--;
+        console.log(num);
+        var div = document.createElement('div');
+        div.innerHTML = num;
+        document.body.appendChild(div);
+    }
+}
+
+/*  
+    ========================================================================================================
                                                         DEBUG
     ========================================================================================================
     
@@ -174,4 +192,5 @@ function countdown(num){
 //fiveAdditionWhile();
 //isOdd();
 //isEven();
-countdown(8);
+// countdown(8);
+countdownDOM(802);
