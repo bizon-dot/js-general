@@ -15,15 +15,9 @@
 
             7. Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
-            8.Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal numero passato.
-                            Esempio:
-                                Input: n = 5
-                                Output:
-                                        4
-                                        3
-                                        2
-                                        1
-                                        0
+            // 8.Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal numero passato.
+           
+               9.Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
 */
 
 /*  
@@ -177,6 +171,32 @@ function countdownDOM(num){
     }
 }
 
+
+
+/*  
+    =================================================================================================================
+        9. Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la 
+            stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
+    =================================================================================================================
+    
+*/
+
+function printMaxWord(){
+    let word1 = prompt(`Inserisci la prima parola`);
+    let word2 = prompt(`Inserisci la seconda parola`);
+    console.log(word1.length);
+    let lengthWord1 = word1.length;
+    let lengthWord2 = word2.length;
+    if (lengthWord1 > lengthWord2) {
+        console.log(`La parola più corta è ${word1}`);
+    } else if (lengthWord1 < lengthWord2) {
+        console.log(`La parola più lunga è ${word2}`);
+    } else {
+        console.log(`Le parole: ${word1} e ${word2} hanno la stessa lunghezza`);
+    }
+   
+}
+
 /*  
     ========================================================================================================
                                                         DEBUG
@@ -190,5 +210,6 @@ function countdownDOM(num){
 //fiveAdditionWhile();
 //isOdd();
 //isEven();
-// countdown(8);
-countdownDOM(802);
+//countdown(8);
+//countdownDOM(802);
+printMaxWord();
