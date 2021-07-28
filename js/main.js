@@ -17,8 +17,33 @@
 
             // 8.Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal numero passato.
            
-               9.Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
+            //    9.Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
 */
+
+/*  
+    ========================================================================================================
+                                                        DEBUG
+    ========================================================================================================
+    
+*/
+
+//maxNum();
+//maxWord();
+//fiveAddition();
+//fiveAdditionWhile();
+//isOdd();
+//isEven();
+//countdown(8);
+//countdownDOM(802);
+
+// let word1 = prompt(`Inserisci la prima parola`);
+// let word2 = prompt(`Inserisci la seconda parola`);
+
+// (sameLengthWord(word1,word2)) ? console.log(`Le parole: ${word1} e ${word2} hanno la stessa lunghezza`) : console.log(`Le parole: ${word1} e ${word2} hanno una diversa lunghezza`);  
+
+
+
+
 
 /*  
     ========================================================================================================
@@ -181,35 +206,8 @@ function countdownDOM(num){
     
 */
 
-function printMaxWord(){
-    let word1 = prompt(`Inserisci la prima parola`);
-    let word2 = prompt(`Inserisci la seconda parola`);
-    console.log(word1.length);
-    let lengthWord1 = word1.length;
-    let lengthWord2 = word2.length;
-    if (lengthWord1 > lengthWord2) {
-        console.log(`La parola più corta è ${word1}`);
-    } else if (lengthWord1 < lengthWord2) {
-        console.log(`La parola più lunga è ${word2}`);
-    } else {
-        console.log(`Le parole: ${word1} e ${word2} hanno la stessa lunghezza`);
-    }
+function sameLengthWord(word1,word2){
+    return (word1 == word2) ? true : false; 
    
 }
 
-/*  
-    ========================================================================================================
-                                                        DEBUG
-    ========================================================================================================
-    
-*/
-
-//maxNum();
-//maxWord();
-//fiveAddition();
-//fiveAdditionWhile();
-//isOdd();
-//isEven();
-//countdown(8);
-//countdownDOM(802);
-printMaxWord();
