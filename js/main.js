@@ -19,7 +19,7 @@
            
             //    9.Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
 
-            10. Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l’altro di verde. Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
+            // 10. Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l’altro di verde. Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
 */
 
 /*  
@@ -46,8 +46,7 @@
 let numbers = randomNum(60);
 createTempleate();
 numbers.forEach( function(number) {
-    let isEvenNum = isEven(number);
-    (isEvenNum == true) ? document.getElementById("red").innerHTML += number + `<br>`: document.getElementById("green").innerHTML += number + `<br>`; 
+    (isEven(number)) ? document.getElementById("red").innerHTML += number + `<br>`: document.getElementById("green").innerHTML += number + `<br>`; 
 })
 console.log(numbers);
 
