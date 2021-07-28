@@ -18,6 +18,8 @@
             // 8.Scrivi una funzione che dato un numero in input, stampi il conto alla rovescia a partire dal numero passato.
            
             //    9.Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga
+
+            10. Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l’altro di verde. Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
 */
 
 /*  
@@ -40,6 +42,14 @@
 // let word2 = prompt(`Inserisci la seconda parola`);
 
 // (sameLengthWord(word1,word2)) ? console.log(`Le parole: ${word1} e ${word2} hanno la stessa lunghezza`) : console.log(`Le parole: ${word1} e ${word2} hanno una diversa lunghezza`);  
+
+let numbers = randomNum(60);
+createTempleate();
+numbers.forEach( function(number) {
+    let isEvenNum = isEven(number);
+    (isEvenNum == true) ? document.getElementById("red").innerHTML += number + `<br>`: document.getElementById("green").innerHTML += number + `<br>`; 
+})
+console.log(numbers);
 
 
 
@@ -145,11 +155,12 @@ function isOdd(){
     
 */
 
-function isEven(){
-    var num = prompt((`Inserisci un numero, se è pari sarà stampato nella console`));
-    if (num % 2 == 0){
-        console.log(`Il numero: ` + num + ` è pari`);
-    }
+function isEven(num){
+    // var num = prompt((`Inserisci un numero, se è pari sarà stampato nella console`));
+    // if (num % 2 == 0){
+    //     console.log(`Il numero: ` + num + ` è pari`);
+    // }
+    return (num % 2 == 0) ? true : false;
     
 }
 
@@ -210,4 +221,35 @@ function sameLengthWord(word1,word2){
     return (word1 == word2) ? true : false; 
    
 }
+
+/*  
+    =================================================================================================================
+        10. Crea due tag div con due id diversi. Un div avrà il testo colorato di rosso mentre l’altro di verde. 
+            Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
+    =================================================================================================================
+    
+*/
+
+function createTempleate(){
+    let box = `
+       <div id="red" style="color:red"></div>
+       <div id="green" style="color:green"></div>
+       `;
+        let templateBox = document.createElement('div');
+        templateBox.innerHTML = box;
+        document.getElementById('board').appendChild(templateBox);
+}
+
+function randomNum(length){
+    let randomNum = [];
+    while (randomNum.length < length) {
+        let num = Math.floor(Math.random() * 999) + 1;
+        if (!(randomNum.includes(num))) {
+            randomNum.push(num);
+        }
+    }
+    return randomNum;
+}
+
+
 
